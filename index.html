@@ -348,7 +348,7 @@ krahasoni vlerat e shtëpive dhe parcelave dhe konsultohuni me profesionistë.">
 
   /* ============ SELL PROPERTY — process strip (different design) ============ */
   .sell-strip{
-    background:var(--ink);
+    /* background:var(--ink); */
     color:var(--paper);
     border-radius:var(--radius-lg);
     padding:36px 22px;
@@ -365,13 +365,13 @@ krahasoni vlerat e shtëpive dhe parcelave dhe konsultohuni me profesionistë.">
   .sell-step .mark{
     font-family:'Fraunces',serif;
     font-size:1.3rem;
-    color:#f2d9a6;
+    color:var(--red);
     flex-shrink:0;
   }
-  .sell-step h3{font-size:1.05rem;color:var(--paper);font-weight:600;}
-  .sell-step p{font-size:0.9rem;color:rgba(239,238,226,0.72);margin-top:4px;}
+  .sell-step h3{font-size:1.05rem;color:var(--ink);font-weight:600;}
+  .sell-step p{font-size:0.9rem;color:var(--ink);margin-top:4px;}
   .sell-strip-cta{display:flex;flex-direction:column;gap:14px;align-items:flex-start;}
-  .sell-strip-cta p{color:rgba(239,238,226,0.8);max-width:34ch;}
+  .sell-strip-cta p{color:var(--ink);max-width:34ch;}
 
   /* ============ INVEST FEATURE (magazine hero card) ============ */
   .invest{
@@ -548,7 +548,7 @@ krahasoni vlerat e shtëpive dhe parcelave dhe konsultohuni me profesionistë.">
     .band-tight{padding:64px 0;}
     .card{flex-basis:29%;}
     .sell-strip{flex-direction:row;align-items:center;padding:52px 48px;}
-    .sell-strip .steps{grid-template-columns:1fr 1fr;flex:1;}
+    .sell-strip .steps{;flex:1;}
     .sell-strip-cta{flex:0 0 300px;}
     .invest-card-body{padding:46px 52px;max-width:640px;}
     .invest-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:stretch;}
@@ -634,15 +634,17 @@ krahasoni vlerat e shtëpive dhe parcelave dhe konsultohuni me profesionistë.">
     <div class="rail" id="railBuy">
 
       <article class="card">
-        <div class="card-img">
-          <span class="card-tag for-sale">Në shitje</span>
-          <img src="assets/img/index/Penthouse në Yzberisht Kati 10.jpg" alt="Penthouse në Yzberisht">
-        </div>
-        <div class="card-body">
-          <h3>Penthouse, Yzberisht</h3>
-          <p class="loc">Rrethi Tiranë · 2 dhoma gjumi · 125m²</p>
-          <p class="price">€200,000</p>
-        </div>
+        <a href="./prona/apartament-yzberisht-ne-shitje.html">
+          <div class="card-img">
+            <span class="card-tag for-sale">Në shitje</span>
+            <img src="assets/img/index/Penthouse në Yzberisht Kati 10.jpg" alt="Penthouse në Yzberisht">
+          </div>
+          <div class="card-body">
+            <h3>Penthouse, Yzberisht</h3>
+            <p class="loc">Rrethi Tiranë · 2 dhoma gjumi · 125m²</p>
+            <p class="price">€200,000</p>
+          </div>
+        </a>
       </article>
 
       <article class="card">
@@ -799,7 +801,7 @@ krahasoni vlerat e shtëpive dhe parcelave dhe konsultohuni me profesionistë.">
         </div>
       </div>
       <div class="sell-strip-cta">
-        <p>Je investitor strategjik që kërkon projektin e rradhës? Po shet një pronë që ende po ndërtohet?</p>
+        <p>Je <b><u>investitor strategjik</u></b> që kërkon projektin e rradhës? Po shet një pronë që ende po ndërtohet?</p>
         <a href="#contact" class="btn btn-red">Kontakto Tani</a>
       </div>
     </div>
